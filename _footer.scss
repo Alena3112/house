@@ -1,0 +1,144 @@
+.footer-wrap {
+  border-top: 5px solid $blue;
+  border-left: 5px solid $blue;
+  border-right: 5px solid $blue;
+  border-radius: 64px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.768032212885154) 74%,
+    rgba(71, 139, 249, 0.4459033613445378) 100%
+  );
+  margin-top: -50px;
+  @media (max-width: 575px) {
+    margin-top: 0px;
+    padding-top: 10px;
+  }
+}
+.wrap-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 34px;
+
+  @media (max-width: 575px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+}
+.footer-logo {
+  margin-left: 35px;
+  // margin-top:100px;
+}
+// .menu-title-footer{
+//   margin-left: 217px;
+// }
+.logo-footer {
+  margin-bottom: 16px;
+}
+.text-soc-title {
+  font-family: $lexend;
+  color: $white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.menu-list-footer {
+  display: flex;
+  flex-wrap: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  //margin: 0px auto;
+  @media (max-width: 575px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // justify-content: flex-end;
+    margin-top: 20px;
+    padding-top: 0px;
+    margin-bottom: 3px;
+    margin-left: -250px;
+  }
+
+  li {
+    padding-right: 32px;
+    text-align: end;
+    @media (max-width: 575px) {
+      padding-right: 12px;
+      text-align: left;
+    }
+  }
+}
+.mga {
+  margin-right: 32px;
+}
+.text-soc-title {
+  text-align: right;
+  margin-bottom: 15px;
+  @media (max-width: 575px) {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+}
+.footer-text {
+  width: 1650px;
+  border-top: 2px solid $blue;
+  margin-top: 32px;
+  margin-left: 140px;
+  margin-bottom: 24px;
+  text-align: center;
+  @media (max-width: 575px) {
+   width: 500px;
+   margin: 0 auto;
+   padding-top: 15px;
+  }
+  p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+.soc-title {
+  @media (max-width: 575px) {
+    margin-left: -150px;
+    margin-bottom: 10px;
+  }
+}
+.soc-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 400;
+  @media (max-width: 575px) {
+    align-items: flex-start;
+    font-size: 32px;
+  }
+}
+.footer-menu-item {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin-right: 11px;
+  // background-color: $blue;
+  background-image: url(/acsses/Union1.png);
+  cursor: pointer;
+
+  img {
+    display: block;
+    margin: 25% auto;
+  }
+}
+.footer-menu-item::hover {
+  background-image: url(/acsses/UnionHover.png);
+}

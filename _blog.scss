@@ -1,0 +1,88 @@
+.blog {
+  width: 531px;
+  margin-top: 140px;
+  //max-height: 659px;
+  margin-right:140px;
+  @media (max-width: 575px) {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 33px;
+  }
+}
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  @media (max-width: 575px) {
+    margin-bottom: 18px;
+  }
+}
+.blog-item {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid $blue;
+  border-radius: 90px;
+  align-items: center;
+  max-height: 595px;
+  overflow: auto;
+  background-color:#ffffff19;
+  // scrollbar-width: thin; 
+  // scrollbar-color: blue orange;
+  @media (max-width: 575px) {
+    max-height: 478px;
+    border-radius: 50px;
+  }
+
+}
+.blog-list {
+  width: 467px;
+  border: 3px solid $blue;
+  border-radius: 196px;
+  background: none;
+  color: $white;
+  background: #1E1231;
+  cursor: pointer;
+  margin-top: 24px;
+  @media (max-width: 575px) {
+   width:274px;
+   margin-top: 10px;
+   border-radius: 40px;
+  }
+}
+.blog-list:hover {
+  color: $white;
+}
+.blog-text {
+  display: block;
+  margin: 15px 35px;
+  p {
+    margin-bottom: 6px;
+
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+
+
+  }
+}
+
+// .blog-item{
+//   scrollbar-width: thin;          /* "auto" or "thin" */
+ 
+// }
+// .blog-item::-webkit-scrollbar-thumb {
+//     background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+//     box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+//     border-radius: 100px;
+// }
+.blog-item::-webkit-scrollbar{
+    width: 8px;
+    height: 400px;
+}
+.blog-item::-webkit-scrollbar-track {
+    background: #ffffff46;        /* цвет дорожки */
+  }
+  .blog-item::-webkit-scrollbar-thumb {
+    background-color: $blue;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    
+  }
