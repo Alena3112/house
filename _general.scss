@@ -7,6 +7,7 @@
 }
 // @media (max-width: 575px){ }
 $lexend: "Lexend", sans-serif;
+$futura: "FuturaPTMedium";
 $black: #000000;
 $black-pro: #050505;
 $blue: #478bf9;
@@ -23,8 +24,8 @@ body {
 .wrap {
   width: 1920px;
   margin: 0 auto;
-  background-color:$black;
-  background-image: url(/acsses/DotLight.png);
+  background-color: $black;
+  background-image: url("../acsses/DotLight.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -43,7 +44,6 @@ body {
   justify-content: space-between;
   padding-bottom: 20px;
   // background-image:url(./acsses/LineLight.png);
-  
 }
 h1 {
   font-family: $lexend;
@@ -64,7 +64,8 @@ h2 {
   font-weight: 600;
   line-height: 40px;
   @media (max-width: 575px) {
-font-size: 32px;  }
+    font-size: 32px;
+  }
 }
 h3 {
   font-family: $lexend;
@@ -102,18 +103,25 @@ a {
   line-height: 20px;
   cursor: pointer;
 }
-a:hover{
-  text-decoration: underline; 
-  color:#478bf9;
+a:hover {
+  text-decoration: underline;
+  color: #478bf9;
   transition: 1s;
 }
 button:hover {
-	background: rgba(0,0,0,0);
-	color:$black-pro;
-	box-shadow: inset 0 0 0 3px $blue;
-  transition: 0,5s;
-  a{
+  background: rgba(0, 0, 0, 0);
+  color: $black-pro;
+  box-shadow: inset 0 0 0 3px $blue;
+  transition: 0, 5s;
+  a {
     text-decoration: none;
   }
- 
+}
+.futura {
+  font-family: $futura;
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 16px;
+  color: #FFFFFF99;
+
 }

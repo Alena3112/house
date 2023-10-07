@@ -169,7 +169,7 @@
   border-radius: 100%;
   margin-right: 11px;
   // background-color: $blue;
-  background-image: url(/acsses/Union1.png);
+  background-image: url("../acsses/Union1.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -191,5 +191,5 @@
   }
 }
 .footer-menu-item:hover {
-  background-image: url(/acsses/UnionHover.png);
+  background-image: url("../acsses/UnionHover.png");
 }
