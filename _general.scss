@@ -23,13 +23,17 @@ body {
 .wrap {
   width: 1920px;
   margin: 0 auto;
-  background-color: $black-pro;
-  // background-image: url(/acsses/fone.jpg);
-  // background-position: center; /* Center the image */
-  // background-repeat: no-repeat; /* Do not repeat the image */
-  // background-size: cover; /* Resize the background image to cover the entire container */
+  background-color:$black;
+  background-image: url(/acsses/DotLight.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
   @media (max-width: 575px) {
-    width: 574px;
+    width: 572px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 320px) {
+    width: 320px;
   }
 }
 .home_row {
@@ -38,6 +42,8 @@ body {
   margin: 0px auto;
   justify-content: space-between;
   padding-bottom: 20px;
+  // background-image:url(./acsses/LineLight.png);
+  
 }
 h1 {
   font-family: $lexend;
@@ -94,4 +100,20 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: underline; 
+  color:#478bf9;
+  transition: 1s;
+}
+button:hover {
+	background: rgba(0,0,0,0);
+	color:$black-pro;
+	box-shadow: inset 0 0 0 3px $blue;
+  transition: 0,5s;
+  a{
+    text-decoration: none;
+  }
+ 
 }

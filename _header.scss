@@ -1,30 +1,64 @@
 .header_wrap {
-  max-width: 1640px;
+  width: auto;
   height: auto;
-  margin: 0px auto;
-  padding-top: 16px;
-  padding-bottom: 8px;
+  // margin: 0px auto;
+  //padding-top: 16px;
+  // padding-bottom: 8px;
   //background-color: $black-pro;
   @media (max-width: 575px) {
     max-width: 574px;
   }
+  @media screen and (max-width: 320px) {
+    max-width: 320px;
+  }
 }
 .header-list {
-  max-height: 140px;
-  width: 100%;
-  background-color: $black-pro;
+  position: fixed;
+  //max-height: 140px;
+  width: 1640px;
+  background-color: #110a1d;
   border: 3px solid $blue;
   border-radius: 64px;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 16px;
+  margin-left: 140px;
+
   // justify-content: space-between;
   @media (max-width: 575px) {
-    width: 95%;
+    width: 555px;
     max-height: 56px;
     margin-left: 10px;
     // margin-right: 10px;
   }
+  @media screen and (max-width: 320px) {
+    width: 310px;
+    max-height: 56px;
+    margin-left: 10px;
+    margin: 16px 0px;
+  }
 }
+.header-list.click {
+  @media (max-width: 575px) {
+    position: absolute;
+    width: 300px;
+    max-height: 56px;
+    margin-left: 10px;
+    background-color: $black-pro;
+    border: 3px solid $blue;
+    border-radius: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 15;
+  }
+  @media screen and (max-width: 320px) {
+    width: 310px;
+    max-height: 56px;
+    margin-left: 0px;
+    margin: 16px 0px;
+  }
+}
+
 .logo {
   display: block;
   margin: 32px 180px 32px 48px;
@@ -37,7 +71,7 @@
   display: none;
   @media (max-width: 575px) {
     display: block;
-    margin: 19px 140px 19px 14px;
+    margin: 19px 0px 19px 14px;
   }
 }
 
@@ -52,21 +86,21 @@
 }
 .menu-list {
   display: flex;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0px auto;
 
   li {
     padding-right: 32px;
+    padding-top: 10px;
   }
 }
 .header-register {
   display: flex;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 24px;
+
   button {
     margin-left: 14px;
   }
@@ -77,18 +111,41 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 380px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+  @media screen and (max-width: 320px) {
+    margin-left: 150px;
+  }
+}
+.header-register.click {
+  @media (max-width: 575px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url(/acsses/logoBtn.svg);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-left: 200px;
     margin-top: 10px;
     margin-bottom: 18px;
   }
+  @media screen and (max-width: 320px) {
+    margin-left: 150px;
+  }
 }
+
 .btn-language {
   display: block;
   width: 75px;
   height: 48px;
   border: 2px solid $blue;
   border-radius: 24px;
-  background: none;
+  background: #1e1231;
   color: $white;
   align-items: center;
   text-align: center;
@@ -109,10 +166,31 @@
   height: 48px;
   border: 2px solid $blue;
   border-radius: 24px;
-  background: none;
+  background: #1e1231;
   color: $white;
   @media (max-width: 575px) {
     display: none;
+  }
+}
+.btn-log.click {
+  @media (max-width: 575px) {
+    display: block;
+    width: 92%;
+    height: 48px;
+    border: 2px solid $blue;
+    border-radius: 24px;
+    background: #1e1231;
+    color: $white;
+    position: absolute;
+    z-index: 10;
+    margin-top: 520px;
+    margin-left: -450px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  @media screen and (max-width: 320px) {
+    margin-left: -210px;
   }
 }
 .btn-sing {
@@ -127,6 +205,28 @@
     display: none;
   }
 }
+.btn-sing.click {
+  @media (max-width: 575px) {
+    display: block;
+    position: absolute;
+    width: 92%;
+    height: 48px;
+    background: $blue;
+    color: $white;
+    border-radius: 24px;
+    border: none;
+    z-index: 10;
+    margin-top: 580px;
+    margin-left: -450px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  @media screen and (max-width: 320px) {
+    margin-left: -210px;
+  }
+}
+
 .btn-languageRU {
   display: none;
 }
@@ -145,35 +245,93 @@
 /////burger
 ///
 
-    .menu-button,
-    .menu-button::before,
-    .menu-button::after {
-      @media (max-width: 575px) {
-        display: block;
-      background-color:$white;
-      position: absolute;
-      height: 4px;
-      width: 30px;
-      transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      border-radius: 2px;
-     
-      }
-      
-    }
+.container-burger {
+  display: inline-block;
+  cursor: pointer;
+  display: none;
+  @media (max-width: 575px) {
+    display: block;
+    margin-top: 12px;
+    margin-left: 10px;
+  }
+}
 
-    .menu-button::before {
-      content: "";
-      margin-top: -8px;
-    }
+.bar1,
+.bar2,
+.bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
 
-    .menu-button::after {
-      content: "";
-      margin-top: 8px;
-    }
-  .burger{
-    @media (max-width: 575px) {
-      margin-left: 450px;
-      margin-top: -35px;
-    }
+/* Поворот первой полосы */
+.bar1.change {
+  -webkit-transform: rotate(-40deg) translate(-5px, 6px);
+  transform: rotate(-40deg) translate(-5px, 6px);
+}
+
+/* Исчезание второй полосы */
+.bar2.change {
+  opacity: 0;
+}
+
+/* Поворот последней полосы */
+.bar3.change {
+  -webkit-transform: rotate(40deg) translate(-6px, -6px);
+  transform: rotate(40deg) translate(-4px, -4px);
+}
+
+.menu.click {
+  @media (max-width: 575px) {
+    display: block;
+    width: 95%;
+  
+  }
+}
+.menu-title.click {
+  @media (max-width: 575px) {
+    position: absolute;
+    display: block;
+    background: $black;
+    margin-left: -5px;
+    width: 99%;
+    max-height: auto;
+    transition-duration: 0.5s;
+    margin-right: 0px;
+    z-index: 5;
+    margin-top: 55px;
+    padding-top: 70px;
+    padding-bottom: 250px;
   }
 
+}
+
+.menu-list.click {
+  @media (max-width: 575px) {
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+  li {
+    @media (max-width: 575px) {
+      display: block;
+      border: 2px solid $blue;
+      padding: 13px 20px;
+      text-align: left;
+      border-radius: 28px;
+      margin: 2px 10px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      width: 100%;
+    }
+  }
+}
