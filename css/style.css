@@ -11,7 +11,7 @@
 body {
   font-family: "Lexend", sans-serif;
   color: #ffffff;
-  background-color: #478bf9;
+  background-color: #110a1d;
   margin: 0 auto;
 }
 
@@ -131,8 +131,8 @@ button:hover {
   color: #050505;
   -webkit-box-shadow: inset 0 0 0 3px #478bf9;
           box-shadow: inset 0 0 0 3px #478bf9;
-  -webkit-transition: 0, 5s;
-  transition: 0, 5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 button:hover a {
   text-decoration: none;
@@ -551,7 +551,7 @@ button:hover a {
 .wrap-page {
   max-width: 1960px;
   height: auto;
-  background-image: url(/acsses/LineLight.png);
+  background-image: url("../acsses/LineLight.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -672,6 +672,30 @@ h3 {
     display: none;
   }
 }
+.banner-col .banner-line1 {
+  overflow: hidden;
+  position: relative;
+}
+.banner-col .banner-line1 img {
+  -webkit-animation: slideYY 3s linear infinite;
+          animation: slideYY 3s linear infinite;
+}
+.banner-col .banner-line2 {
+  overflow: hidden;
+  position: relative;
+}
+.banner-col .banner-line2 img {
+  -webkit-animation: slideY 3s linear infinite;
+          animation: slideY 3s linear infinite;
+}
+.banner-col .banner-line3 {
+  overflow: hidden;
+  position: relative;
+}
+.banner-col .banner-line3 img {
+  -webkit-animation: slideYY 3s linear infinite;
+          animation: slideYY 3s linear infinite;
+}
 
 .banner-col-revers {
   display: none;
@@ -687,7 +711,112 @@ h3 {
     margin: 0 auto;
   }
 }
+.banner-col-revers .banner-line1 {
+  overflow: hidden;
+  position: relative;
+}
+.banner-col-revers .banner-line1 img {
+  -webkit-animation: slide 3s linear infinite;
+          animation: slide 3s linear infinite;
+}
+.banner-col-revers .banner-line2 {
+  overflow: hidden;
+  position: relative;
+}
+.banner-col-revers .banner-line2 img {
+  -webkit-animation: slideX 3s linear infinite;
+          animation: slideX 3s linear infinite;
+}
+.banner-col-revers .banner-line3 {
+  overflow: hidden;
+  position: relative;
+}
+.banner-col-revers .banner-line3 img {
+  -webkit-animation: slide 3s linear infinite;
+          animation: slide 3s linear infinite;
+}
 
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes slide {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+@-webkit-keyframes slideX {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes slideX {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+@-webkit-keyframes slideY {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+@keyframes slideY {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+@-webkit-keyframes slideYY {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes slideYY {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+}
 .blog {
   width: 531px;
   margin-top: 260px;
@@ -695,7 +824,6 @@ h3 {
 }
 @media (max-width: 575px) {
   .blog {
-    width: 300px;
     margin: 0 auto;
     padding-top: 33px;
   }
@@ -720,13 +848,11 @@ h2 {
   border: 3px solid #478bf9;
   height: 595px;
   border-radius: 100px;
-  width: 531px;
   background-color: rgba(255, 255, 255, 0.0980392157);
 }
 @media (max-width: 575px) {
   .scroll-blog {
     border-radius: 50px;
-    width: 300px;
     margin: 0 auto;
   }
 }
@@ -833,6 +959,12 @@ h2 {
   border-radius: 20px; /* закругления плашки */
 }
 
+.blog-list:hover {
+  background: #478bf9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .footer-wrap {
   border-top: 2px solid #478bf9;
   border-left: 5px solid #478bf9;
@@ -891,7 +1023,7 @@ h2 {
 }
 @media screen and (max-width: 320px) {
   .wrap-nav {
-    width: 99%;
+    width: 98%;
   }
 }
 

@@ -16,9 +16,10 @@ $white: #ffffff;
 body {
   font-family: $lexend;
   color: $white;
-  background-color: #478bf9;
+  background-color: #110a1d;
   margin: 0 auto;
   // height: auto;
+  // height: 100vh;
 }
 
 .wrap {
@@ -112,7 +113,7 @@ button:hover {
   background: rgba(0, 0, 0, 0);
   color: $black-pro;
   box-shadow: inset 0 0 0 3px $blue;
-  transition: 0, 5s;
+  transition: 0.5s;
   a {
     text-decoration: none;
   }
@@ -122,6 +123,5 @@ button:hover {
   font-size: 14px;
   font-weight: 450;
   line-height: 16px;
-  color: #FFFFFF99;
-
+  color: #ffffff99;
 }

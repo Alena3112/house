@@ -4,7 +4,7 @@
   //max-height: 659px;
   margin-right: 140px;
   @media (max-width: 575px) {
-    width: 300px;
+   // width: 300px;
     margin: 0 auto;
     padding-top: 33px;
   }
@@ -28,11 +28,11 @@ h2 {
   border: 3px solid $blue;
   height: 595px;
   border-radius: 100px;
-  width: 531px;
+ // width: 531px;
   background-color: #ffffff19;
   @media (max-width: 575px) {
     border-radius: 50px;
-    width: 300px;
+  //  width: 80%;
     margin: 0 auto;
   }
   @media screen and (max-width: 320px) {
@@ -115,4 +115,8 @@ h2 {
 .blog-item::-webkit-scrollbar-thumb {
   background-color: $blue; /* цвет плашки */
   border-radius: 20px; /* закругления плашки */
+}
+.blog-list:hover{
+  background:$blue;
+  transition: 0.5s;
 }
