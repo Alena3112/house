@@ -12,7 +12,7 @@ body {
   font-family: "Lexend", sans-serif;
   color: #ffffff;
   background-color: #110a1d;
-  margin: 0 auto;
+  height: 100vh;
 }
 
 .wrap {
@@ -126,7 +126,7 @@ a:hover {
   transition: 1s;
 }
 
-button:hover {
+.button:hover {
   background: rgba(0, 0, 0, 0);
   color: #050505;
   -webkit-box-shadow: inset 0 0 0 3px #478bf9;
@@ -134,7 +134,7 @@ button:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-button:hover a {
+.button:hover a {
   text-decoration: none;
 }
 
@@ -144,6 +144,13 @@ button:hover a {
   font-weight: 450;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 575px) {
+  .futura {
+    font-size: 12px;
+    font-weight: 450;
+    line-height: 16px;
+  }
 }
 
 @font-face {
@@ -181,6 +188,8 @@ button:hover a {
       flex-wrap: wrap;
   margin-top: 16px;
   margin-left: 140px;
+  margin-right: 140px;
+  z-index: 15;
 }
 @media (max-width: 575px) {
   .header-list {
@@ -282,7 +291,7 @@ button:hover a {
           justify-content: space-between;
   margin-top: 24px;
 }
-.header-register button {
+.header-register .button {
   margin-left: 14px;
 }
 @media (max-width: 575px) {
@@ -343,6 +352,7 @@ button:hover a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 12px 10px;
 }
 .btn-language img {
   width: 15px;
@@ -363,6 +373,7 @@ button:hover a {
   border-radius: 24px;
   background: #1e1231;
   color: #ffffff;
+  padding: 11px 11px;
 }
 @media (max-width: 575px) {
   .btn-log {
@@ -373,7 +384,7 @@ button:hover a {
 @media (max-width: 575px) {
   .btn-log.click {
     display: block;
-    width: 92%;
+    width: 95%;
     height: 48px;
     border: 2px solid #478bf9;
     border-radius: 24px;
@@ -382,10 +393,11 @@ button:hover a {
     position: absolute;
     z-index: 10;
     margin-top: 470px;
-    margin-left: -450px;
+    margin-left: -440px;
     font-size: 16px;
     font-weight: 430;
     line-height: 20px;
+    padding: 13px 110px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -402,6 +414,8 @@ button:hover a {
   color: #ffffff;
   border-radius: 24px;
   border: none;
+  padding-top: 14px;
+  padding-left: 14px;
 }
 @media (max-width: 575px) {
   .btn-sing {
@@ -413,7 +427,7 @@ button:hover a {
   .btn-sing.click {
     display: block;
     position: absolute;
-    width: 92%;
+    width: 95%;
     height: 48px;
     background: #478bf9;
     color: #ffffff;
@@ -421,10 +435,11 @@ button:hover a {
     border: none;
     z-index: 10;
     margin-top: 530px;
-    margin-left: -450px;
+    margin-left: -440px;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+    padding: 13px 110px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -435,6 +450,27 @@ button:hover a {
 
 .btn-languageRU {
   display: none;
+  width: 75px;
+  height: 48px;
+  border: 2px solid #478bf9;
+  border-radius: 24px;
+  background: #1e1231;
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 12px 10px;
+}
+.btn-languageRU img {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+}
+@media (max-width: 575px) {
+  .btn-languageRU {
+    display: none;
+  }
 }
 
 .en {
@@ -616,6 +652,7 @@ h3 {
   color: #ffffff;
   border-radius: 48px;
   border: none;
+  padding: 20px 72px;
 }
 .btn-page a {
   font-family: "Lexend", sans-serif;
@@ -626,7 +663,7 @@ h3 {
   text-align: center;
   text-transform: uppercase;
 }
-@media screen and (max-width: 320px) {
+@media (max-width: 575px) {
   .btn-page a {
     font-size: 18px;
     font-weight: 600;
@@ -640,11 +677,7 @@ h3 {
   .btn-page {
     width: 300px;
     height: 53px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: center;
+    padding: 15px 56px;
     margin: 0 auto;
   }
 }
@@ -912,9 +945,14 @@ h2 {
 }
 @media (max-width: 575px) {
   .blog-list {
-    width: 274px;
+    width: 474px;
     margin-top: 10px;
     border-radius: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .blog-list {
+    width: 274px;
   }
 }
 
@@ -967,9 +1005,9 @@ h2 {
 
 .footer-wrap {
   border-top: 2px solid #478bf9;
-  border-left: 5px solid #478bf9;
-  border-right: 5px solid #478bf9;
-  border-radius: 64px;
+  border-left: 2px solid #478bf9;
+  border-right: 2px solid #478bf9;
+  border-radius: 64px 64px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -977,7 +1015,6 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: rgb(0, 0, 0);
   background: #110a1d;
   margin-top: -50px;
 }
@@ -1070,6 +1107,13 @@ h2 {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  padding-right: 15px;
+}
+@media (max-width: 575px) {
+  .text-soc-title {
+    font-size: 14px;
+    padding-right: 0px;
+  }
 }
 
 .menu-list-footer {
@@ -1116,6 +1160,7 @@ h2 {
 @media (max-width: 575px) {
   .menu-list-footer li {
     padding-right: 12px;
+    font-size: 14px;
     text-align: left;
   }
 }
@@ -1138,7 +1183,7 @@ h2 {
 
 .footer-text {
   width: 1650px;
-  border-top: 2px solid #478bf9;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
   margin-top: 32px;
   margin-left: 140px;
   margin-bottom: 24px;
@@ -1167,8 +1212,8 @@ h2 {
 }
 @media screen and (max-width: 320px) {
   .footer-text {
-    width: 310px;
-    margin-left: 0px;
+    width: 290px;
+    margin-left: 10px;
     padding-top: 4px;
     padding-bottom: 4px;
   }
@@ -1182,7 +1227,7 @@ h2 {
 }
 @media screen and (max-width: 320px) {
   .soc-title {
-    margin-left: -8px;
+    margin-left: -1px;
   }
 }
 

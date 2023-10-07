@@ -25,16 +25,15 @@ navBtn.onclick = function () {
   //navRemove.classList.remove("click")
 
 }
-// function myFunc() {
-//   const menuItem = document.querySelectorAll('.menu-item')// находим все элементы с классом block
-//   for( let i = 0; i < menuItem.length; i++){ // проходим циклом по всем элементам объекта
-//     menuItem[i].classList.toggle("click");
-//   }
-// }
-// navBtn.forEach(e => {
-//   e.addEventListener( "click" , () => {
-//     menuItem.forEach(element => {
-//       element.classList.toggle("click");
-//     });
-//   });
-// })
+const enBtn=document.querySelector(".btn-language")
+const ruBtn=document.querySelector(".btn-languageRu")
+const paragraph = document.querySelector('.en');
+//paragraph.textContent = 'Здесь был Кекс. Мяу!';
+enBtn.onclick=function(){
+  if(paragraph.textContent == 'RU'){
+    paragraph.textContent = 'EN';
+  }else{
+    paragraph.textContent = 'RU'
+  }
+  
+}

@@ -23,8 +23,8 @@
   flex-wrap: wrap;
   margin-top: 16px;
   margin-left: 140px;
-
-  // justify-content: space-between;
+  margin-right: 140px;
+  z-index: 15;
   @media (max-width: 575px) {
     width: 555px;
     max-height: 56px;
@@ -101,8 +101,9 @@
   justify-content: space-between;
   margin-top: 24px;
 
-  button {
+  .button {
     margin-left: 14px;
+    //padding: 10px;
   }
   @media (max-width: 575px) {
     background-image: url("../acsses/logoBtn.svg");
@@ -149,6 +150,7 @@
   color: $white;
   align-items: center;
   text-align: center;
+  padding: 12px 10px;
   img {
     //display: block;
     width: 15px;
@@ -168,6 +170,7 @@
   border-radius: 24px;
   background: #1e1231;
   color: $white;
+  padding: 11px 11px;
   @media (max-width: 575px) {
     display: none;
   }
@@ -175,7 +178,7 @@
 .btn-log.click {
   @media (max-width: 575px) {
     display: block;
-    width: 92%;
+    width: 95%;
     height: 48px;
     border: 2px solid $blue;
     border-radius: 24px;
@@ -184,10 +187,11 @@
     position: absolute;
     z-index: 10;
     margin-top: 470px;
-    margin-left: -450px;
+    margin-left: -440px;
     font-size: 16px;
     font-weight: 430;
     line-height: 20px;
+    padding: 13px 110px;
   }
   @media screen and (max-width: 320px) {
     margin-left: -210px;
@@ -201,6 +205,8 @@
   color: $white;
   border-radius: 24px;
   border: none;
+  padding-top: 14px;
+  padding-left: 14px;
   @media (max-width: 575px) {
     display: none;
   }
@@ -209,7 +215,7 @@
   @media (max-width: 575px) {
     display: block;
     position: absolute;
-    width: 92%;
+    width: 95%;
     height: 48px;
     background: $blue;
     color: $white;
@@ -217,10 +223,11 @@
     border: none;
     z-index: 10;
     margin-top: 530px;
-    margin-left: -450px;
+    margin-left: -440px;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+    padding: 13px 110px;
   }
   @media screen and (max-width: 320px) {
     margin-left: -210px;
@@ -229,6 +236,24 @@
 
 .btn-languageRU {
   display: none;
+  width: 75px;
+  height: 48px;
+  border: 2px solid $blue;
+  border-radius: 24px;
+  background: #1e1231;
+  color: $white;
+  align-items: center;
+  text-align: center;
+  padding: 12px 10px;
+  img {
+    //display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+  }
+  @media (max-width: 575px) {
+    display: none;
+  }
 }
 
 .en {
