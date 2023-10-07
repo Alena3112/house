@@ -4,9 +4,10 @@
   border-right: 2px solid $blue;
   border-radius: 64px 64px 0px 0px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   background: #110a1d;
   margin-top: -50px;
+ 
   @media (max-width: 575px) {
     margin-top: 0px;
     padding-top: 10px;
