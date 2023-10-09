@@ -7,9 +7,13 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   margin-top: -10px;
-  //padding-bottom: 250px;
-  @media (max-width: 575px) {
-    max-width: 574px;
+  @media screen and (max-width: 1900px) {
+    max-width: 1440px;
+    //padding-top: 186px;
+  }
+
+  @media screen and (max-width: 1439px) {
+    max-width: 481px;
     padding-top: 136px;
   }
 }
@@ -18,8 +22,26 @@
   max-width: 669px;
   height: auto;
   text-align: left;
-  margin-top: 416px;
+  margin-top: 426px;
   margin-left: 140px;
+
+  
+  @media screen and (max-width: 1900px) {
+    margin-top: 380px;
+  margin-left: 20px;
+  }
+
+  @media screen and (max-width: 1439px) {
+    max-width: 574px;
+    text-align: center;
+    padding-top: 70px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 480px) {
+    padding-top: 10px;
+  }
+
+
   @media (max-width: 575px) {
     max-width: 574px;
     text-align: center;
@@ -37,13 +59,13 @@ span {
 h1 {
   //display: block;
   margin-bottom: 24px;
-  @media (max-width: 575px) {
+  @media (max-width: 1439px) {
     margin-bottom: 12px;
   }
 }
 h3 {
   margin-bottom: 48px;
-  @media (max-width: 575px) {
+  @media (max-width: 1439px) {
     margin-bottom: 24px;
   }
 }
@@ -56,25 +78,25 @@ h3 {
   border-radius: 48px;
   border: none;
   padding: 20px 72px;
- 
-  a{
+
+  a {
     font-family: $lexend;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 32px;
-  letter-spacing: 0em;
-  text-align: center;
-  text-transform: uppercase;
-  @media (max-width: 575px) {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
-    line-height: 23px;
+    line-height: 32px;
     letter-spacing: 0em;
     text-align: center;
-    margin: 0 auto;
+    text-transform: uppercase;
+    @media (max-width: 1439px) {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin: 0 auto;
+    }
   }
-  }
-  @media (max-width: 575px) {
+  @media (max-width: 1439px) {
     width: 300px;
     height: 53px;
     padding: 15px 56px;

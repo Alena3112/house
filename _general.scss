@@ -17,7 +17,7 @@ body {
   font-family: $lexend;
   color: $white;
   background-color: #110a1d;
-//margin: 0 auto;
+  //margin: 0 auto;
   // height: auto;
   height: 100vh;
 }
@@ -30,12 +30,20 @@ body {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  @media (max-width: 575px) {
-    width: 572px;
+  height: auto;
+
+  @media screen and (max-width: 1900px) {
+    max-width: 1440px;
     margin: 0 auto;
   }
-  @media screen and (max-width: 320px) {
-    width: 320px;
+
+  @media screen and (max-width: 1439px) {
+    max-width: 481px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 480px) {
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
 .home_row {
@@ -44,6 +52,9 @@ body {
   margin: 0px auto;
   justify-content: space-between;
   padding-bottom: 20px;
+  @media screen and (max-width: 1900px) {
+    justify-content: center;
+  }
   // background-image:url(./acsses/LineLight.png);
 }
 h1 {
@@ -52,7 +63,18 @@ h1 {
   font-size: 96px;
   font-weight: 500;
   line-height: 96px;
-  @media (max-width: 575px) {
+  // @media (max-width: 575px) {
+  //   font-size: 46px;
+  //   line-height: 50px;
+  //   text-align: center;
+  // }
+
+  @media screen and (max-width: 1900px) {
+    font-size: 66px;
+    line-height: 70px;
+  }
+
+  @media screen and (max-width: 1439px) {
     font-size: 46px;
     line-height: 50px;
     text-align: center;
@@ -64,7 +86,12 @@ h2 {
   font-size: 40px;
   font-weight: 600;
   line-height: 40px;
-  @media (max-width: 575px) {
+
+  @media screen and (max-width: 1900px) {
+    font-size: 38px;
+  }
+
+  @media screen and (max-width: 1439px) {
     font-size: 32px;
   }
 }
@@ -74,7 +101,14 @@ h3 {
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
-  @media (max-width: 575px) {
+
+  @media screen and (max-width: 1900px) {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1439px) {
     font-size: 20px;
     line-height: 26px;
     text-align: center;
@@ -124,9 +158,9 @@ a:hover {
   font-weight: 450;
   line-height: 16px;
   color: #ffffff99;
-  @media (max-width: 575px) {
+  @media (max-width: 1439px) {
     font-size: 12px;
     font-weight: 450;
     line-height: 16px;
-}
+  }
 }
